@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-06T09:19:52.804Z</updated>
+  <updated>2022-11-06T10:58:44.984Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>盈羽不是英语</title>
+    <link href="http://example.com/2022/11/06/%E7%9B%88%E7%BE%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E8%AF%AD/"/>
+    <id>http://example.com/2022/11/06/%E7%9B%88%E7%BE%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E8%AF%AD/</id>
+    <published>2022-11-06T10:55:45.000Z</published>
+    <updated>2022-11-06T10:58:44.984Z</updated>
+    
+    <content type="html"><![CDATA[<p>#失忆的人#</p><blockquote><p>他是…<br>一个…<br>他会介绍的</p></blockquote><ol><li><p>失落</p></li><li><p>人群</p><p> 在失落的世界里，</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#失忆的人#&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;他是…&lt;br&gt;一个…&lt;br&gt;他会介绍的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;失落&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;人群&lt;/p&gt;
+&lt;p&gt; 在失落的世界里，&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="文学" scheme="http://example.com/tags/%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction</title>
