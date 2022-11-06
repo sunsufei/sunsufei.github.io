@@ -168,13 +168,20 @@
 <li>最迟发生时间le：逆向拓扑排序，减，最小者</li>
 </ol>
 <h3 id="找最小生成树"><a href="#找最小生成树" class="headerlink" title="找最小生成树"></a>找最小生成树</h3><h3 id="找最短路径"><a href="#找最短路径" class="headerlink" title="找最短路径"></a>找最短路径</h3>]]></content>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
   </entry>
   <entry>
     <title>Introduction</title>
     <url>/2022/11/06/Introduction/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>###How to learn C++?###</p>
+<blockquote>
+<p>How to learn data and structure?</p>
+</blockquote>
+]]></content>
       <tags>
-        <tag>-数据结构与算法 -C++</tag>
+        <tag>数据结构与算法 C++</tag>
       </tags>
   </entry>
   <entry>
