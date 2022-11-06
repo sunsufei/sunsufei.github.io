@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SunSufei&#39;World</title>
+  
+  <subtitle>Thinking and exploring</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-11-06T09:19:52.804Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>sunsufei</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction</title>
+    <link href="http://example.com/2022/11/06/Introduction/"/>
+    <id>http://example.com/2022/11/06/Introduction/</id>
+    <published>2022-11-06T09:15:59.000Z</published>
+    <updated>2022-11-06T09:19:52.804Z</updated>
+    
+    
+    
+    
+    
+    <category term="-数据结构与算法 -C++" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://example.com/2022/11/06/My-New-Post/"/>
+    <id>http://example.com/2022/11/06/My-New-Post/</id>
+    <published>2022-11-06T07:25:03.000Z</published>
+    <updated>2022-11-06T10:14:15.784Z</updated>
+    
+    <content type="html"><![CDATA[<p>#你好</p><h1 id="图形结构"><a href="#图形结构" class="headerlink" title="图形结构"></a>图形结构</h1><blockquote><p>没有回路的图就是树</p></blockquote><h1 id="图的定义"><a href="#图的定义" class="headerlink" title="图的定义"></a>图的定义</h1><ul><li>G&#x3D;(V,E)表示，V是顶点集，E是边集</li><li>边如果是有向的，则称为有向图</li><li>V&#x3D;{A，B，C，D}，E&#x3D;{&lt;A,B&gt;,&lt;B,A&gt;，……} </li><li>加权图，边被赋予权值 （V,E,W)</li></ul><h1 id="图的术语"><a href="#图的术语" class="headerlink" title="图的术语"></a>图的术语</h1><ul><li>邻接</li><li>度 <ul><li>入度</li><li>出度</li></ul></li><li><strong>边&#x3D;（度和）&#x2F;2</strong></li><li>子图</li><li>路径<ul><li>非加权图中路径长度就是边的数目</li><li>加权图中路径长途为边的权值之和</li><li>简单路径：除了起始路径和终止结点可能相同外，每个结点只通过一次</li><li>环：起始路径和终止结点相同的环</li></ul></li><li>连通性：两个结点间有路径-&gt;连通图：任意两个结点间都是连通的<ul><li>每一个极大连通的子图称为连通分量</li><li>有向图中任意两个结点间都是连通的则为强连通图</li><li>有向图不是强连通的，但看成无向图时连通，则称为弱连通图</li></ul></li><li>完全图：任意两个结点间都有边的无向图称为完全无向图；完全有向图</li><li>生成树和最小生成树<ul><li>对连接图进行遍历，过程中所经过的边和顶点构成一棵树，称为生成树</li><li>任意两个结点间有且只有一条通路</li><li>包含所有顶点</li><li>边数&#x3D;顶点数-1</li></ul></li></ul><h1 id="图的运算"><a href="#图的运算" class="headerlink" title="图的运算"></a>图的运算</h1><h2 id="常规运算"><a href="#常规运算" class="headerlink" title="常规运算"></a>常规运算</h2><ul><li>构造</li><li>判断是否存在边</li><li>删除插入边</li><li>返回结点树、边数</li></ul><h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><h4 id="邻接矩阵"><a href="#邻接矩阵" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h4><p>N*N的布尔矩阵</p><p>A<del>ij</del> 表示结点i到j之间的边的权值</p><ul><li>优点：查找两顶点间是否有边方便</li><li>需要n<sup>2</sup>储存空间；适合稠密图</li><li>不适合删除、插入</li><li>无向图只需储存上半角</li></ul><h4 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h4><ul><li>顶点表</li><li>边表</li></ul><p>O(V+E)</p><p>从某个结点出发所有的边构成一个链表</p><p>A-&gt;1-&gt;2</p><p>表示A到结点1，2有一条边</p><p><strong>有向图单链表的结点数等于边数</strong></p><p><strong>无向图结点数为边数两倍</strong></p><p>插入时从<em><strong>表头</strong></em>插入</p><h2 id="和应用紧密结合的运算"><a href="#和应用紧密结合的运算" class="headerlink" title="和应用紧密结合的运算"></a>和应用紧密结合的运算</h2><h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>图中存在回路-&gt;访问标志</p><h4 id="深度优先搜索"><a href="#深度优先搜索" class="headerlink" title="深度优先搜索"></a>深度优先搜索</h4><ul><li><p>选中第一个被访问顶点</p></li><li><p>对顶点做访问标志</p></li><li><p>依次对该顶点邻接的第一个、第二个顶点……深度优先搜索</p></li><li><p>若结点的下一个结点都被访问过，回溯到上一个结点</p><blockquote><p>若图不是连通或强连通时，从一个结点出发不一定能访问到所有顶点</p></blockquote></li><li><p>若还有顶点未被访问，则选中一个未访问结点，再开始深度优先搜索</p><blockquote><p>形成另一棵树</p></blockquote></li></ul><p>时间复杂度</p><p>邻接矩阵O(|V|^2^)</p><p>邻接表 O(|V|+|E|)</p><h4 id="广度优先"><a href="#广度优先" class="headerlink" title="广度优先"></a>广度优先</h4><ul><li>选中第一个被访问的结点</li><li>对结点做访问过标志</li><li>依次访问其邻接结点，再对其邻接结点进行广度优先搜索</li><li>若还有结点未被访问，选中一个未访问结点，广度</li></ul><p>使用队列实现</p><p>时间复杂度</p><ul><li>邻接矩阵：O(V^2^ )</li><li>邻接表： O(V+E)</li></ul><h3 id="判断图的连通性"><a href="#判断图的连通性" class="headerlink" title="判断图的连通性"></a>判断图的连通性</h3><h4 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h4><p>遍历结果是树or森林</p><h4 id="有向图"><a href="#有向图" class="headerlink" title="有向图"></a>有向图</h4><ul><li>从任意顶点开始深度优先遍历</li><li>对森林中每棵树进行后续遍历，并按遍历的顺序给每个顶点编号</li><li>对树进行逆向</li><li>对逆向后的树从最大编号开始深度优先搜索</li></ul><h4 id="欧拉回路"><a href="#欧拉回路" class="headerlink" title="欧拉回路"></a>欧拉回路</h4><p>经过所有边且不重复回到原点：回路</p><p>经过所有边且每条边只经过一次：欧拉路径</p><p>判定</p><ul><li>如果有奇数桥的结点不只两个，无法找到</li><li>如果只有两个地方有奇数条边，从二者之一出发，经过所有桥一次，再次回到另一个地方</li><li>如果都是偶数桥，任意均可</li></ul><p>算法实现：</p><p>深度优先搜索</p><h3 id="拓扑排序和关键路径"><a href="#拓扑排序和关键路径" class="headerlink" title="拓扑排序和关键路径"></a>拓扑排序和关键路径</h3><h4 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h4><p>将图转化为线性序列，相对前驱后继关系不变</p><p><strong>顶点活动网络（AOV）</strong></p><ol><li>有起始顶点</li><li>无回路</li></ol><p>实现</p><ol><li><p>计算入度 (遍历邻接表)</p></li><li><p>入度为零的结点入队 </p></li><li><p>出队，删除关联的边</p></li><li><p>到2</p></li></ol><h4 id="关键路径"><a href="#关键路径" class="headerlink" title="关键路径"></a>关键路径</h4><p>AOE：加权有向无环图</p><ul><li>加权</li><li>一个源点一个终点</li><li>边表示活动</li></ul><p>实现</p><ol><li>计算每个活动的时间余量：最早开始时间-最迟开始时间</li><li>最早开始时间ee：正向拓扑排序，每个直接前驱的最早发生时间+该前驱到该顶点的活动时间，最大者为最早发生时间</li><li>最迟发生时间le：逆向拓扑排序，减，最小者</li></ol><h3 id="找最小生成树"><a href="#找最小生成树" class="headerlink" title="找最小生成树"></a>找最小生成树</h3><h3 id="找最短路径"><a href="#找最短路径" class="headerlink" title="找最短路径"></a>找最短路径</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#你好&lt;/p&gt;
+&lt;h1 id=&quot;图形结构&quot;&gt;&lt;a href=&quot;#图形结构&quot; class=&quot;headerlink&quot; title=&quot;图形结构&quot;&gt;&lt;/a&gt;图形结构&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;没有回路的图就是树&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;图的</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/11/06/hello-world/"/>
+    <id>http://example.com/2022/11/06/hello-world/</id>
+    <published>2022-11-06T04:35:38.613Z</published>
+    <updated>2022-11-06T04:35:38.613Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
