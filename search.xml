@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Introduction</title>
-    <url>/2022/11/06/Introduction/</url>
-    <content><![CDATA[<h3 id="How-to-learn-C"><a href="#How-to-learn-C" class="headerlink" title="How to learn C++?"></a>How to learn C++?</h3><blockquote>
-<p>How to learn data and structure?</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>数据结构与算法</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/11/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -29,6 +17,18 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Introduction</title>
+    <url>/2022/11/06/Introduction/</url>
+    <content><![CDATA[<h3 id="How-to-learn-C"><a href="#How-to-learn-C" class="headerlink" title="How to learn C++?"></a>How to learn C++?</h3><blockquote>
+<p>How to learn data and structure?</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>数据结构与算法</tag>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>My New Post</title>
@@ -182,6 +182,93 @@
 <h3 id="找最小生成树"><a href="#找最小生成树" class="headerlink" title="找最小生成树"></a>找最小生成树</h3><h3 id="找最短路径"><a href="#找最短路径" class="headerlink" title="找最短路径"></a>找最短路径</h3>]]></content>
       <tags>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2022/11/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3>
+
+	<div class="row">
+    <embed src="/第1章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3>
+
+	<div class="row">
+    <embed src="/第2章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3>
+
+	<div class="row">
+    <embed src="/第3章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="四"><a href="#四" class="headerlink" title="四"></a>四</h3>
+
+	<div class="row">
+    <embed src="/第4章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="五"><a href="#五" class="headerlink" title="五"></a>五</h3>
+
+	<div class="row">
+    <embed src="/第5章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="六"><a href="#六" class="headerlink" title="六"></a>六</h3>
+
+	<div class="row">
+    <embed src="/第6章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="七"><a href="#七" class="headerlink" title="七"></a>七</h3>
+
+	<div class="row">
+    <embed src="/第7章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="八"><a href="#八" class="headerlink" title="八"></a>八</h3>
+
+	<div class="row">
+    <embed src="/第8章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+<h3 id="九"><a href="#九" class="headerlink" title="九"></a>九</h3>
+
+	<div class="row">
+    <embed src="/第9章" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+]]></content>
+      <tags>
+        <tag>pdf</tag>
       </tags>
   </entry>
   <entry>
