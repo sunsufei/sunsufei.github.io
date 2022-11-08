@@ -13,16 +13,7 @@
     <meta name="description" content="sunsufei的个人学习空间,实验一
 一元多项式求导
 
-/*
-线性结构---实验一
-尾插法和前插法
-单链表
-derivative  导数
-Sophia
-2022.11.01
-OK
-*/
-#include &amp;quot;iostre,"> 
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474,"> 
     <meta name="author" content="sunsufei"> 
     <link rel="alternative" href="atom.xml" title="SunSufei&#39;World" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -36,16 +27,7 @@ OK
     <meta name="twitter:description" content="sunsufei的个人学习空间,实验一
 一元多项式求导
 
-/*
-线性结构---实验一
-尾插法和前插法
-单链表
-derivative  导数
-Sophia
-2022.11.01
-OK
-*/
-#include &amp;quot;iostre,"/>
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474,"/>
     
     
     
@@ -56,16 +38,7 @@ OK
     <meta property="og:description" content="sunsufei的个人学习空间,实验一
 一元多项式求导
 
-/*
-线性结构---实验一
-尾插法和前插法
-单链表
-derivative  导数
-Sophia
-2022.11.01
-OK
-*/
-#include &amp;quot;iostre,"/>
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -110,226 +83,8 @@ OK
             <h2 id="实验一"><a href="#实验一" class="headerlink" title="实验一"></a>实验一</h2><blockquote>
 <p>一元多项式求导</p>
 </blockquote>
-<pre><code class="C++">/*
-线性结构---实验一
-尾插法和前插法
-单链表
-derivative  导数
-Sophia
-2022.11.01
-OK
-*/
-#include &quot;iostream&quot;
-#include &quot;cstdio&quot;
-using namespace std;
-typedef struct node&#123;
-    int coefficient;//系数
-    int index;//指数
-    node *next;
-&#125;*Node, node;
-void InputAndDerivation(Node &amp;H)&#123;
-    H=new node;
-    H-&gt;next=NULL;
-    int coefficient;
-    int index;
-    Node q=new node;
-    q=H;
-    while(1)&#123;
-        scanf(&quot;%d %d&quot;, &amp;coefficient, &amp;index);
-        Node p=new node;
-        coefficient *= index;
-        index--;	
-        p-&gt;coefficient=coefficient;
-        p-&gt;index=index;
-        p-&gt;next=q-&gt;next;
-        q-&gt;next=p;
-        q=p;
-        if(getchar()==&#39;\n&#39;)
-            break;
-    &#125;
-&#125;
-void Output(Node H)&#123;
-    if(H-&gt;next==NULL)  return;
-    Node p=new node;
-    p=H-&gt;next;
-    while(1)&#123;
-        if(p-&gt;coefficient==0)&#123;
-            if(H-&gt;next==p)&#123;
-                cout&lt;&lt;p-&gt;coefficient&lt;&lt;&quot; &quot;&lt;&lt;p-&gt;index;
-                break;
-            &#125;else
-                break;	
-        &#125;
-        cout&lt;&lt;p-&gt;coefficient&lt;&lt;&quot; &quot;&lt;&lt;p-&gt;index;
-        if(p-&gt;next==NULL)
-            break;	
-        if(p-&gt;next != NULL)
-            cout&lt;&lt;&quot; &quot;;
-        p=p-&gt;next;
-    &#125;
-&#125;
-int main()&#123;
-    Node H;
-    InputAndDerivation(H);
-    Output(H);
-    return 0;	
-&#125;
-</code></pre>
-<h2 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h2><blockquote>
-<p>还原二叉树</p>
-</blockquote>
-<pre><code class="C++">/*
-实验二---还原二叉树
-Sophia
-2022.11.01
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">线性结构---实验一</span></span><br><span class="line"><span class="comment">尾插法和前插法</span></span><br><span class="line"><span class="comment">单链表</span></span><br><span class="line"><span class="comment">derivative  导数</span></span><br><span class="line"><span class="comment">Sophia</span></span><br><span class="line"><span class="comment">2022.11.01</span></span><br><span class="line"><span class="comment">OK</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;cstdio&quot;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">    <span class="type">int</span> coefficient;<span class="comment">//系数</span></span><br><span class="line">    <span class="type">int</span> index;<span class="comment">//指数</span></span><br><span class="line">    node *next;</span><br><span class="line">&#125;*Node, node;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">InputAndDerivation</span><span class="params">(Node &amp;H)</span></span>&#123;</span><br><span class="line">    H=<span class="keyword">new</span> node;</span><br><span class="line">    H-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    <span class="type">int</span> coefficient;</span><br><span class="line">    <span class="type">int</span> index;</span><br><span class="line">    Node q=<span class="keyword">new</span> node;</span><br><span class="line">    q=H;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;coefficient, &amp;index);</span><br><span class="line">        Node p=<span class="keyword">new</span> node;</span><br><span class="line">        coefficient *= index;</span><br><span class="line">        index--;    </span><br><span class="line">        p-&gt;coefficient=coefficient;</span><br><span class="line">        p-&gt;index=index;</span><br><span class="line">        p-&gt;next=q-&gt;next;</span><br><span class="line">        q-&gt;next=p;</span><br><span class="line">        q=p;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">getchar</span>()==<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Output</span><span class="params">(Node H)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(H-&gt;next==<span class="literal">NULL</span>)  <span class="keyword">return</span>;</span><br><span class="line">    Node p=<span class="keyword">new</span> node;</span><br><span class="line">    p=H-&gt;next;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p-&gt;coefficient==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(H-&gt;next==p)&#123;</span><br><span class="line">                cout&lt;&lt;p-&gt;coefficient&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;p-&gt;index;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;p-&gt;coefficient&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;p-&gt;index;</span><br><span class="line">        <span class="keyword">if</span>(p-&gt;next==<span class="literal">NULL</span>)</span><br><span class="line">            <span class="keyword">break</span>;  </span><br><span class="line">        <span class="keyword">if</span>(p-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        p=p-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Node H;</span><br><span class="line">    <span class="built_in">InputAndDerivation</span>(H);</span><br><span class="line">    <span class="built_in">Output</span>(H);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;   </span><br><span class="line">&#125;</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">## 实验二 ##  </span><br><span class="line"></span><br><span class="line">&gt; 还原二叉树</span><br><span class="line"></span><br><span class="line">```C++</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">实验二---还原二叉树</span></span><br><span class="line"><span class="comment">Sophia</span></span><br><span class="line"><span class="comment">2022.11.01</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">二叉树存储结构</span></span><br><span class="line"><span class="comment">遍历</span></span><br><span class="line"><span class="comment">OK</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;cstdio&quot;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">char</span> Firstroot[<span class="number">50</span>];</span><br><span class="line"><span class="type">char</span> Mediumroot[<span class="number">50</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Tree</span>&#123;</span><br><span class="line">    <span class="type">char</span> data;</span><br><span class="line">    Tree *lch, *rch;</span><br><span class="line">&#125;Tree, *Bitree;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Position</span><span class="params">(<span class="type">int</span> root, <span class="type">int</span> right, <span class="type">int</span> left)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">Bitree <span class="title">BuildTree</span><span class="params">(<span class="type">int</span> root, <span class="type">int</span> right, <span class="type">int</span> left)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(left&lt;right)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">    Bitree p=<span class="keyword">new</span> Tree;</span><br><span class="line">    p-&gt;data=Firstroot[root];</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> pos=<span class="built_in">Position</span>(root, right, left);</span><br><span class="line">    p-&gt;lch=<span class="built_in">BuildTree</span>(root+<span class="number">1</span>, right, pos<span class="number">-1</span>);</span><br><span class="line">    p-&gt;rch=<span class="built_in">BuildTree</span>(root+pos-right+<span class="number">1</span>, pos+<span class="number">1</span>, left);</span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Input</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;n; ++i)&#123;</span><br><span class="line">        cin&gt;&gt;Firstroot[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;n; ++i)&#123;</span><br><span class="line">        cin&gt;&gt;Mediumroot[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Position</span><span class="params">(<span class="type">int</span> root, <span class="type">int</span> right, <span class="type">int</span> left)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=right; i&lt;=left; ++i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(Mediumroot[i]==Firstroot[root])</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Height</span><span class="params">(Bitree T)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(T==<span class="literal">NULL</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> (<span class="built_in">Height</span>(T-&gt;lch) &gt; <span class="built_in">Height</span>(T-&gt;rch) ? <span class="built_in">Height</span>(T-&gt;lch)+<span class="number">1</span> : <span class="built_in">Height</span>(T-&gt;rch)+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="built_in">Input</span>();</span><br><span class="line">    Bitree T=<span class="built_in">BuildTree</span>(<span class="number">0</span>, <span class="number">0</span>, n<span class="number">-1</span>);</span><br><span class="line">    <span class="type">int</span> height=<span class="built_in">Height</span>(T);</span><br><span class="line">    cout&lt;&lt;height;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">## 实验三 ##  </span><br><span class="line"></span><br><span class="line">&gt; 广度优先---六度空间</span><br><span class="line"></span><br><span class="line">```C++</span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;queue&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;cstdio&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX_VERTEX_NUM 100   <span class="comment">//最大顶点个数</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">ArcCell</span>&#123;</span><br><span class="line">    <span class="type">int</span> adj;</span><br><span class="line">&#125;ArcCell, AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>&#123;</span><br><span class="line">    AdjMatrix arcs;  <span class="comment">//弧的信息</span></span><br><span class="line">    <span class="type">int</span> vexnum, arcnum; <span class="comment">//顶点数，弧数</span></span><br><span class="line">&#125;MGraph;</span><br><span class="line"><span class="type">int</span> vex_six_num[MAX_VERTEX_NUM];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Creatgraph</span><span class="params">(MGraph &amp;G)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> i, j, k;</span><br><span class="line">    cin&gt;&gt;G.vexnum&gt;&gt;G.arcnum;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;G.vexnum;++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(j=<span class="number">0</span>; j&lt;G.vexnum; ++j)&#123;</span><br><span class="line">                G.arcs[i][j].adj=<span class="number">0</span>;</span><br><span class="line">                G.arcs[j][i].adj=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;   </span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">0</span>; k&lt;G.arcnum; ++k)&#123;</span><br><span class="line">            cin&gt;&gt;i&gt;&gt;j;</span><br><span class="line">            G.arcs[i<span class="number">-1</span>][j<span class="number">-1</span>].adj=<span class="number">1</span>;</span><br><span class="line">            G.arcs[j<span class="number">-1</span>][i<span class="number">-1</span>].adj=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BFSTraver</span><span class="params">(MGraph G, <span class="type">int</span> v)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> visited[G.vexnum];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;G.vexnum; ++i)&#123;</span><br><span class="line">            visited[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    queue&lt;<span class="type">int</span>&gt; Q;</span><br><span class="line">    visited[v]=<span class="number">1</span>;</span><br><span class="line">    Q.<span class="built_in">push</span>(v);</span><br><span class="line">            <span class="keyword">while</span>(!Q.<span class="built_in">empty</span>() &amp;&amp; count&lt;=<span class="number">6</span>)&#123;</span><br><span class="line">                <span class="type">int</span> num=Q.<span class="built_in">size</span>();</span><br><span class="line">                <span class="type">int</span> array[num];</span><br><span class="line">            </span><br><span class="line">                vex_six_num[v] += num;</span><br><span class="line">            </span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;num; ++i)&#123;</span><br><span class="line">                    array[i]=Q.<span class="built_in">front</span>();</span><br><span class="line">                    Q.<span class="built_in">pop</span>();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;num; ++i)&#123;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="type">int</span> w=<span class="number">0</span>; w&lt;G.vexnum; ++w)&#123;</span><br><span class="line">            <span class="keyword">if</span>(G.arcs[w][array[i]].adj &amp;&amp; !visited[w])&#123;</span><br><span class="line">                visited[w]=<span class="number">1</span>;</span><br><span class="line">                Q.<span class="built_in">push</span>(w);</span><br><span class="line">            &#125;</span><br><span class="line">                    &#125;   </span><br><span class="line">                &#125;</span><br><span class="line">                ++count;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    MGraph G;</span><br><span class="line">    <span class="built_in">Creatgraph</span>(G);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;G.vexnum; ++i)&#123;</span><br><span class="line">        vex_six_num[i]=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;G.vexnum; ++i)&#123;</span><br><span class="line">            <span class="built_in">BFSTraver</span>(G, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;G.vexnum; ++i)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d:  %.2f%%\n&quot;</span>, i+<span class="number">1</span>, <span class="number">100</span>*(<span class="type">float</span>)vex_six_num[i]/G.vexnum);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-二叉树存储结构
-遍历
-OK
-*/
-
-#include &quot;iostream&quot;
-#include &quot;cstdio&quot;
-using namespace std;
-
-char Firstroot[50];
-char Mediumroot[50];
-
-typedef struct Tree&#123;
-    char data;
-    Tree *lch, *rch;
-&#125;Tree, *Bitree;
-
-int Position(int root, int right, int left);
-
-Bitree BuildTree(int root, int right, int left)&#123;
-    if(left&lt;right)
-        return NULL;
-    
-    Bitree p=new Tree;
-    p-&gt;data=Firstroot[root];
-    
-    int pos=Position(root, right, left);
-    p-&gt;lch=BuildTree(root+1, right, pos-1);
-    p-&gt;rch=BuildTree(root+pos-right+1, pos+1, left);
-    return p;
-&#125;
-
-int Input()&#123;
-    int n;
-    cin&gt;&gt;n;
-
-    for(int i=0; i&lt;n; ++i)&#123;
-        cin&gt;&gt;Firstroot[i];
-    &#125;
-    
-    for(int i=0; i&lt;n; ++i)&#123;
-        cin&gt;&gt;Mediumroot[i];
-    &#125;
-    return n;
-&#125;
-
-int Position(int root, int right, int left)&#123;
-
-    for(int i=right; i&lt;=left; ++i)&#123;
-        if(Mediumroot[i]==Firstroot[root])
-            return i;
-    &#125;
-    return 0;
-&#125;
-
-int Height(Bitree T)&#123;
-    if(T==NULL)
-        return 0;
-    return (Height(T-&gt;lch) &gt; Height(T-&gt;rch) ? Height(T-&gt;lch)+1 : Height(T-&gt;rch)+1);
-&#125;
-
-int main()&#123;
-    int n=Input();
-    Bitree T=BuildTree(0, 0, n-1);
-    int height=Height(T);
-    cout&lt;&lt;height;
-    return 0;
-&#125;
-
-
-</code></pre>
-<h2 id="实验三"><a href="#实验三" class="headerlink" title="实验三"></a>实验三</h2><blockquote>
-<p>广度优先—六度空间</p>
-</blockquote>
-<pre><code class="C++">#include &quot;iostream&quot;
-#include &quot;queue&quot;
-#include &quot;cstdio&quot;
-#define MAX_VERTEX_NUM 100   //最大顶点个数
-using namespace std;
-typedef struct ArcCell&#123;
-    int adj;
-&#125;ArcCell, AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];
-typedef struct&#123;
-    AdjMatrix arcs;  //弧的信息
-    int vexnum, arcnum; //顶点数，弧数
-&#125;MGraph;
-int vex_six_num[MAX_VERTEX_NUM];
-void Creatgraph(MGraph &amp;G)&#123;
-    int i, j, k;
-    cin&gt;&gt;G.vexnum&gt;&gt;G.arcnum;
-    for(i=0; i&lt;G.vexnum;++i)&#123;
-            for(j=0; j&lt;G.vexnum; ++j)&#123;
-                G.arcs[i][j].adj=0;
-                G.arcs[j][i].adj=0;
-            &#125;
-        &#125;	
-    for(k=0; k&lt;G.arcnum; ++k)&#123;
-            cin&gt;&gt;i&gt;&gt;j;
-            G.arcs[i-1][j-1].adj=1;
-            G.arcs[j-1][i-1].adj=1;
-        &#125;
-&#125;
-void BFSTraver(MGraph G, int v)&#123;
-    int count=0;
-    int visited[G.vexnum];
-    for(int i=0; i&lt;G.vexnum; ++i)&#123;
-            visited[i]=0;
-        &#125;
-    queue&lt;int&gt; Q;
-    visited[v]=1;
-    Q.push(v);
-            while(!Q.empty() &amp;&amp; count&lt;=6)&#123;
-                int num=Q.size();
-                int array[num];
-                
-                vex_six_num[v] += num;
-                
-                for(int i=0; i&lt;num; ++i)&#123;
-                    array[i]=Q.front();
-                    Q.pop();
-                &#125;
-                for(int i=0; i&lt;num; ++i)&#123;
-                    for(int w=0; w&lt;G.vexnum; ++w)&#123;
-                        if(G.arcs[w][array[i]].adj &amp;&amp; !visited[w])&#123;
-                            visited[w]=1;
-                            Q.push(w);
-                        &#125;
-                    &#125;	
-                &#125;
-                ++count;
-            &#125;
-&#125;
-int main()&#123;
-    MGraph G;
-    Creatgraph(G);
-    for(int i=0; i&lt;G.vexnum; ++i)&#123;
-        vex_six_num[i]=0;
-    &#125;
-    for(int i=0; i&lt;G.vexnum; ++i)&#123;
-            BFSTraver(G, i);
-    &#125;
-    for(int i=0; i&lt;G.vexnum; ++i)&#123;
-        printf(&quot;%d:  %.2f%%\n&quot;, i+1, 100*(float)vex_six_num[i]/G.vexnum);
-    &#125;
-    return 0;
-&#125;
-</code></pre>
 <h2 id="实验四"><a href="#实验四" class="headerlink" title="实验四"></a>实验四</h2><blockquote>
 <p>倒排索引和散列函数</p>
 </blockquote>
@@ -498,7 +253,6 @@ void FindAndRecording(int first, int second)&#123;
                     a++;
                 &#125;
             &#125;
-            
             for(int i=0; i&lt;100; ++i)&#123;
                 find_result[i]=0;
             &#125;
@@ -624,7 +378,7 @@ int main()&#123;
             L.student[2][i].assign(&quot;100&quot;);
         &#125;
         cout&lt;&lt;L.student[0][i]&lt;&lt;&quot;\t&quot;&lt;&lt;L.student[1][i]&lt;&lt;&quot;\t&quot;&lt;&lt;L.student[2][i]&lt;&lt;endl;
-    &#125;
+&#125;
     return 0;
 &#125;
 </code></pre>
@@ -664,7 +418,7 @@ int main()&#123;
     </div>
     
         <div class="side">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">实验一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%BA%8C"><span class="toc-number">2.</span> <span class="toc-text">实验二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%B8%89"><span class="toc-number">3.</span> <span class="toc-text">实验三</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E5%9B%9B"><span class="toc-number">4.</span> <span class="toc-text">实验四</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%BA%94"><span class="toc-number">5.</span> <span class="toc-text">实验五</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">实验一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E5%9B%9B"><span class="toc-number">2.</span> <span class="toc-text">实验四</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%BA%94"><span class="toc-number">3.</span> <span class="toc-text">实验五</span></a></li></ol>
         </div>
     
 </div>
