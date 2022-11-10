@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Introduction</title>
+    <url>/2022/11/06/Introduction/</url>
+    <content><![CDATA[<h3 id="How-to-learn-C"><a href="#How-to-learn-C" class="headerlink" title="How to learn C++?"></a>How to learn C++?</h3><blockquote>
+<p>How to learn data and structure?</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>数据结构与算法</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>My New Post</title>
     <url>/2022/11/06/My-New-Post/</url>
     <content><![CDATA[<p>#你好</p>
@@ -155,18 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Introduction</title>
-    <url>/2022/11/06/Introduction/</url>
-    <content><![CDATA[<h3 id="How-to-learn-C"><a href="#How-to-learn-C" class="headerlink" title="How to learn C++?"></a>How to learn C++?</h3><blockquote>
-<p>How to learn data and structure?</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>数据结构与算法</tag>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/11/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -211,25 +211,6 @@
 <p>快速排序</p>
 </blockquote>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;string&quot;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">SqList</span>&#123;</span><br><span class="line">    string student[<span class="number">3</span>][<span class="number">106</span>];</span><br><span class="line">&#125;SqList;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sort</span>&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">Partition</span><span class="params">(SqList &amp;L, <span class="type">int</span> low, <span class="type">int</span> high, <span class="type">int</span> tag)</span></span>&#123;</span><br><span class="line">        <span class="built_in">Swap</span>(L, <span class="number">0</span>, low);</span><br><span class="line">        <span class="built_in">Swap</span>(L, <span class="number">105</span>, low);</span><br><span class="line">        <span class="keyword">while</span>(low&lt;high) &#123;</span><br><span class="line">            <span class="keyword">while</span> (low &lt; high &amp;&amp; L.student[tag - <span class="number">1</span>][high].<span class="built_in">compare</span>(L.student[tag - <span class="number">1</span>][<span class="number">105</span>]) &gt;= <span class="number">0</span> ) &#123;</span><br><span class="line">                <span class="keyword">if</span>(L.student[tag - <span class="number">1</span>][high].<span class="built_in">compare</span>(L.student[tag - <span class="number">1</span>][<span class="number">105</span>]) == <span class="number">0</span>)&#123;</span><br><span class="line">                     <span class="keyword">if</span>(L.student[<span class="number">0</span>][high].<span class="built_in">compare</span>(L.student[<span class="number">0</span>][<span class="number">105</span>])&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                         <span class="keyword">break</span>;</span><br><span class="line">                     &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                --high;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">Swap</span>(L, low, high);</span><br><span class="line">            <span class="keyword">while</span> (low &lt; high &amp;&amp; L.student[tag - <span class="number">1</span>][low].<span class="built_in">compare</span>(L.student[tag - <span class="number">1</span>][<span class="number">105</span>]) &lt;= <span class="number">0</span> ) &#123;</span><br><span class="line">                <span class="keyword">if</span>(L.student[tag - <span class="number">1</span>][low].<span class="built_in">compare</span>(L.student[tag - <span class="number">1</span>][<span class="number">105</span>]) == <span class="number">0</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(L.student[<span class="number">0</span>][low].<span class="built_in">compare</span>(L.student[<span class="number">0</span>][<span class="number">105</span>])&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                ++low;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">Swap</span>(L, high, low);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">Swap</span>(L, low, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">return</span> low;  <span class="comment">//返回枢轴位置</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">Swap</span><span class="params">(SqList &amp;L, <span class="type">int</span> m, <span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">        L.student[<span class="number">0</span>][m].<span class="built_in">assign</span>(L.student[<span class="number">0</span>][n]);</span><br><span class="line">        L.student[<span class="number">1</span>][m].<span class="built_in">assign</span>(L.student[<span class="number">1</span>][n]);</span><br><span class="line">        L.student[<span class="number">2</span>][m].<span class="built_in">assign</span>(L.student[<span class="number">2</span>][n]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">QSort</span><span class="params">(SqList &amp;L, <span class="type">int</span> low, <span class="type">int</span> high, <span class="type">int</span> tag)</span></span>&#123;</span><br><span class="line">        <span class="type">int</span> pivotloc;</span><br><span class="line">        <span class="keyword">if</span>(low&lt;high)&#123;</span><br><span class="line">            pivotloc=<span class="built_in">Partition</span>(L, low, high, tag);</span><br><span class="line">            <span class="built_in">QSort</span>(L, low, pivotloc<span class="number">-1</span>, tag);</span><br><span class="line">            <span class="built_in">QSort</span>(L, pivotloc+<span class="number">1</span>, high, tag);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,tag;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;tag;</span><br><span class="line">    SqList L;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=n; ++i)&#123;</span><br><span class="line">        cin&gt;&gt;L.student[<span class="number">0</span>][i]&gt;&gt;L.student[<span class="number">1</span>][i]&gt;&gt;L.student[<span class="number">2</span>][i];</span><br><span class="line">        <span class="keyword">if</span>(L.student[<span class="number">2</span>][i].<span class="built_in">compare</span>(<span class="string">&quot;100&quot;</span>)==<span class="number">0</span>)&#123;</span><br><span class="line">            L.student[<span class="number">2</span>][i].<span class="built_in">assign</span>(<span class="string">&quot;999&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    Sort test;</span><br><span class="line">    test.<span class="built_in">QSort</span>(L, <span class="number">1</span>, n, tag);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=n; ++i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(L.student[<span class="number">2</span>][i].<span class="built_in">compare</span>(<span class="string">&quot;999&quot;</span>)==<span class="number">0</span>)&#123;</span><br><span class="line">            L.student[<span class="number">2</span>][i].<span class="built_in">assign</span>(<span class="string">&quot;100&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;L.student[<span class="number">0</span>][i]&lt;&lt;<span class="string">&quot;\t&quot;</span>&lt;&lt;L.student[<span class="number">1</span>][i]&lt;&lt;<span class="string">&quot;\t&quot;</span>&lt;&lt;L.student[<span class="number">2</span>][i]&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>盈羽不是英语</title>
-    <url>/2022/11/06/%E7%9B%88%E7%BE%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E8%AF%AD/</url>
-    <content><![CDATA[<p>#失忆的人#</p>
-<blockquote>
-<p>他是…<br>一个…<br>他会介绍的</p>
-</blockquote>
-<ol>
-<li><p>失落</p>
-</li>
-<li><p>人群</p>
-<p> 在失落的世界里，</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>文学</tag>
-      </tags>
   </entry>
   <entry>
     <title>数据结构</title>
@@ -317,6 +298,25 @@
 ]]></content>
       <tags>
         <tag>pdf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>盈羽不是英语</title>
+    <url>/2022/11/06/%E7%9B%88%E7%BE%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E8%AF%AD/</url>
+    <content><![CDATA[<p>#失忆的人#</p>
+<blockquote>
+<p>他是…<br>一个…<br>他会介绍的</p>
+</blockquote>
+<ol>
+<li><p>失落</p>
+</li>
+<li><p>人群</p>
+<p> 在失落的世界里，</p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>文学</tag>
       </tags>
   </entry>
   <entry>
