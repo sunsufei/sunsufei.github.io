@@ -72,13 +72,13 @@
                             </span>
                             
                                 
-                                    <span>
-                                        <i class="iconfont icon-browse"></i> 阅读：<span class="waline-pageview-count" data-path="/article/1024846679/"></span>
+                                    <span id="/article/1024846679/" class="leancloud_visitors" data-flag-title="与Hexo博客界面相关的一些应用">
+                                        <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                     </span>
                                 
                                 
                                     <span>
-                                        <i class="iconfont icon-interactive"></i> 评论：<span class="waline-comment-count" data-path="/article/1024846679/"></span>
+                                        <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/article/1024846679/"></span>
                                     </span>
                                 
                             
@@ -101,13 +101,13 @@
                             </span>
                             
                                 
-                                    <span>
-                                        <i class="iconfont icon-browse"></i> 阅读：<span class="waline-pageview-count" data-path="/article/3632233996/"></span>
+                                    <span id="/article/3632233996/" class="leancloud_visitors" data-flag-title="test">
+                                        <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                     </span>
                                 
                                 
                                     <span>
-                                        <i class="iconfont icon-interactive"></i> 评论：<span class="waline-comment-count" data-path="/article/3632233996/"></span>
+                                        <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/article/3632233996/"></span>
                                     </span>
                                 
                             
@@ -116,27 +116,6 @@
                     </div>
                 
             </div>
-            
-                
-                    <script type="module">
-                        import { pageviewCount } from "/js/pageview.mjs";
-                      
-                        pageviewCount({
-                          serverURL: "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
-                          path: window.location.pathname,
-                        });
-                    </script>
-                
-                
-                    <script type="module">
-                        import { commentCount } from "/js/comment.mjs";
-                      
-                        commentCount({
-                          serverURL: "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
-                          path: window.location.pathname,
-                        });
-                    </script>
-                
             
             
         
@@ -635,12 +614,12 @@
 
         Comment : {
             switch : true,
-            type   : "Waline",
+            type   : "Valine",
         },
 
         Waline : {
             el              : ".comments-content",
-            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
+            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app",
             path            : window.location.pathname,
             meta            : "['nick', 'mail', 'link']",
             requiredMeta    : "['nick', 'mail']",

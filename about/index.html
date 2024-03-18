@@ -62,16 +62,7 @@
 
                     
                 </div>
-                
-    <script type="module">
-        import { pageviewCount } from "/js/pageview.mjs";
-      
-        pageviewCount({
-          serverURL: "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
-          path: window.location.pathname,
-        });
-    </script>
- 
+                 
             </div>
         
     
@@ -569,12 +560,12 @@
 
         Comment : {
             switch : true,
-            type   : "Waline",
+            type   : "Valine",
         },
 
         Waline : {
             el              : ".comments-content",
-            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
+            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app",
             path            : window.location.pathname,
             meta            : "['nick', 'mail', 'link']",
             requiredMeta    : "['nick', 'mail']",

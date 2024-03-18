@@ -46,13 +46,13 @@
                         </span>
                         
                             
-                                <span>
-                                    <i class="iconfont icon-browse"></i> 阅读：<span class="waline-pageview-count" data-path="/article/1024846679/"></span>
+                                <span id="/article/1024846679/" class="leancloud_visitors" data-flag-title="与Hexo博客界面相关的一些应用">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                 </span>
                             
                             
                                 <span>
-                                    <i class="iconfont icon-interactive"></i> 评论：<span class="waline-comment-count" data-path="/article/1024846679/"></span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/article/1024846679/"></span>
                                 </span>
                               
                         
@@ -163,44 +163,6 @@
         
         <div class="comments-content"></div>
     </div>
-    
-        <!-- 样式文件 -->
-        <link rel="stylesheet" href="/css/waline.css"/>
-        <link rel="stylesheet" href="/css/waline-custom.css"/>
-        <!-- 脚本文件 -->
-        <script type="module">
-            import { init } from "/js/waline.mjs";
-
-            const WalineInstance = init({
-                el              : ".comments-content",
-                serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
-                path            : window.location.pathname,
-                meta            : ['nick', 'mail', 'link'],
-                requiredMeta    : ['nick', 'mail'],
-                pageSize        : 10,
-                lang            : "zh-cn",
-                locale: {
-                    admin       : "博主",
-                    anonymous   : "匿名用户",
-                    sofa        : "快来做第一个评论的人吧 ~",
-                    placeholder : "你是我一生只会遇见一次的惊喜...",
-                },
-                dark            : "html[color-scheme='dark']",
-                search          : false,
-                pageview        : true,
-                comment         : true,
-                copyright       : false,
-            });
-
-            // Waline 输入框选中动画
-            $(document).on("focus", ".wl-header-item .wl-input", function() {
-                $(this).parent().css("border-bottom-color", "var(--input-border-color-focus)");
-            });
-
-            $(document).on("blur", ".wl-header-item .wl-input", function() {
-                $(this).parent().css("border-bottom-color", "var(--input-border-color)");
-            });
-        </script>
     
  
         </div>
@@ -699,12 +661,12 @@
 
         Comment : {
             switch : true,
-            type   : "Waline",
+            type   : "Valine",
         },
 
         Waline : {
             el              : ".comments-content",
-            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app/",
+            serverURL       : "hexo-sunsufei-edslhj5c0-sunsufeis-projects.vercel.app",
             path            : window.location.pathname,
             meta            : "['nick', 'mail', 'link']",
             requiredMeta    : "['nick', 'mail']",
