@@ -87,18 +87,27 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <p>[toc]</p>
-<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul>
+                <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul>
 <li>abbrlink</li>
 <li>algolia</li>
 <li>valine</li>
 <li>waline</li>
 <li>vercl</li>
 </ul>
-<h2 id="Abbrlink"><a href="#Abbrlink" class="headerlink" title="Abbrlink"></a>Abbrlink</h2><blockquote>
-<p>  迟些时候更</p>
-</blockquote>
+<h2 id="Abbrlink"><a href="#Abbrlink" class="headerlink" title="Abbrlink"></a>Abbrlink</h2><p>😊旨在为博客的文章（即网页Page）生成唯一的字符串，用于组成URL，摒弃Hexo自带的<code>:year/:month/:day/:title/</code>，因为层次太多是不利于SEO的。</p>
 <h2 id="LeanCloud"><a href="#LeanCloud" class="headerlink" title="LeanCloud"></a>LeanCloud</h2><p>数据库</p>
+<h2 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h2><ul>
+<li>优点<ul>
+<li>配置简洁方便</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>有网友指出存在安全问题</li>
+<li>无后台管理系统</li>
+</ul>
+</li>
+</ul>
+<h2 id="Waline"><a href="#Waline" class="headerlink" title="Waline"></a>Waline</h2><p><a target="_blank" rel="noopener" href="https://izumi.vip/2022/11/12/Waline%E5%9B%BD%E5%86%85IP%E6%97%A0%E6%B3%95%E8%AF%84%E8%AE%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">https://izumi.vip/2022/11/12/Waline%E5%9B%BD%E5%86%85IP%E6%97%A0%E6%B3%95%E8%AF%84%E8%AE%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html</a></p>
 <h2 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h2><p>服务端</p>
 
                 
@@ -278,7 +287,7 @@
     <script>
         var meting_api = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
     </script>
-    <meting-js id="3778678" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
+    <meting-js id="3778678" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="true" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
 
     <div class="wrap-right">
     <div class="wrap-right-hide">
@@ -704,8 +713,8 @@
             switch                : true,
             tocSelector           : ".toc",
             contentSelector       : ".article-body",
-            headingSelector       : "h1, h2, h3, h4, h5",
-            headingsOffset        : 0,
+            headingSelector       : "h1, h2, h3, h4, h5, h6",
+            headingsOffset        : 2,
             scrollSmooth          : true,
             scrollSmoothOffset    : -5,
             positionFixedSelector : ".toc",
@@ -750,7 +759,7 @@
             server   : "netease", 
             type     : "playlist", 
             fixed    : true, 
-            autoplay : false, 
+            autoplay : true, 
             loop     : "all", 
             order    : "random", 
             preload  : "auto", 
