@@ -6,7 +6,7 @@
   <link href="https://sunsufei.github.io/atom.xml" rel="self"/>
   
   <link href="https://sunsufei.github.io/"/>
-  <updated>2024-03-18T04:10:14.132Z</updated>
+  <updated>2024-03-18T04:21:04.155Z</updated>
   <id>https://sunsufei.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>与Hexo博客界面相关的一些应用</title>
+    <link href="https://sunsufei.github.io/article/1024846679/"/>
+    <id>https://sunsufei.github.io/article/1024846679/</id>
+    <published>2024-03-18T04:17:52.000Z</published>
+    <updated>2024-03-18T04:21:04.155Z</updated>
+    
+    <content type="html"><![CDATA[<p>[toc]</p><h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><ul><li>abbrlink</li><li>algolia</li><li>valine</li><li>waline</li></ul><h2 id="What-is-the-abbrlinnk"><a href="#What-is-the-abbrlinnk" class="headerlink" title="What is the abbrlinnk?"></a>What is the abbrlinnk?</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;Overview&quot;&gt;&lt;a href=&quot;#Overview&quot; class=&quot;headerlink&quot; title=&quot;Overview&quot;&gt;&lt;/a&gt;Overview&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;abbrlink&lt;/li&gt;
+&lt;li&gt;algolia&lt;/</summary>
+      
+    
+    
+    
+    <category term="分享" scheme="https://sunsufei.github.io/category/%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="hexo" scheme="https://sunsufei.github.io/tag/hexo/"/>
+    
+    <category term="abbrlink" scheme="https://sunsufei.github.io/tag/abbrlink/"/>
+    
+    <category term="algolia" scheme="https://sunsufei.github.io/tag/algolia/"/>
+    
+    <category term="valine" scheme="https://sunsufei.github.io/tag/valine/"/>
+    
+    <category term="waline" scheme="https://sunsufei.github.io/tag/waline/"/>
+    
+  </entry>
   
   <entry>
     <title>test</title>
